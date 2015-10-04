@@ -1,0 +1,23 @@
+[color]
+  branch = true
+  diff = false
+  interactive = true
+  pager = true
+  status = true
+[core]
+  editor = vim
+  excludesfile = /Users/albert/.gitignore
+  quotepath = false
+  whitespace = space-before-tab,tab-in-indent,trailing-space
+
+[merge]
+  tool = mvim
+  #tool = vimdiff
+[mergetool "mvim"]
+  cmd = mvim -d -g $LOCAL $MERGED $REMOTE
+  keepbackup=false
+
+
+[user]
+  name = Albert DeFusco
+  email = albert.defusco@me.com
