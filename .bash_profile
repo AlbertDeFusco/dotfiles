@@ -7,8 +7,11 @@ alias ssh='ssh -Y'
 alias bc='bc ~/.bc/extensions.bc'
 alias cp='cp -p'
 alias less=vimpager
+alias mdcat='pandoc -s -f markdown -t man | groff -T utf8 -man'
 
+#modules
 source /usr/local/Modules/3.2.10/init/bash
+export MODULEPATH=$HOME/Library/Modules:$MODULEPATH
 
 #Some gnuplot things
 export GNUTERM=x11
@@ -47,3 +50,5 @@ fi
 #macports
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export MANPATH="/opt/local/share/man:/opt/local/man:$MANPATH"
+## silly tig
+source ~/.tig-completion.sh
