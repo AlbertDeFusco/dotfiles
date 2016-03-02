@@ -52,3 +52,5 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export MANPATH="/opt/local/share/man:/opt/local/man:$MANPATH"
 ## silly tig
 source ~/.tig-completion.sh
+
+export PATH=$HOME/Applications/anaconda3/bin:$PATH
