@@ -46,6 +46,8 @@ else
   export PS1="\u@\h:\W>"
 fi
 
+export CONDA_PS1_BACKUP=$PS1 #fix1
+
 
 #macports
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
@@ -53,4 +55,6 @@ export MANPATH="/opt/local/share/man:/opt/local/man:$MANPATH"
 ## silly tig
 source ~/.tig-completion.sh
 
-export PATH=$HOME/Applications/anaconda3/bin:$PATH
+export PATH=$HOME/Applications/miniconda3/bin:$PATH
+
+export PATH=$HOME/bin:$PATH
