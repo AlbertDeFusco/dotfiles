@@ -55,6 +55,7 @@ export MANPATH="/opt/local/share/man:/opt/local/man:$MANPATH"
 ## silly tig
 source ~/.tig-completion.sh
 
-export PATH=$HOME/Applications/miniconda3/bin:$PATH
+. $HOME/Applications/miniconda3/etc/profile.d/conda.sh
+conda activate base
 
 export PATH=$HOME/bin:$PATH
