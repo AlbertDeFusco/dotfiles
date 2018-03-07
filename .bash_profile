@@ -1,6 +1,5 @@
 set -o vi
 
-alias wget='curl -O'
 alias ldd='otool -L'
 alias ls='ls -G'
 alias ssh='ssh -Y'
@@ -46,7 +45,7 @@ else
   export PS1="\u@\h:\W>"
 fi
 
-export CONDA_PS1_BACKUP=$PS1 #fix1
+#export CONDA_PS1_BACKUP=$PS1 #fix1
 
 
 #macports
@@ -56,6 +55,10 @@ export MANPATH="/opt/local/share/man:/opt/local/man:$MANPATH"
 source ~/.tig-completion.sh
 
 . $HOME/Applications/miniconda3/etc/profile.d/conda.sh
+#https://github.com/conda/conda/issues/6796
+if [[ "$TERM" =~ "screen".* ]]; then
+  conda deactivate
+fi
 conda activate base
 
 export PATH=$HOME/bin:$PATH
