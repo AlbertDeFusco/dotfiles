@@ -1,16 +1,8 @@
+if [ -r ~/.bashrc ]; then
+       source ~/.bashrc
+fi
+
 set -o vi
-
-alias ldd='otool -L'
-alias ls='ls -G'
-alias ssh='ssh -Y'
-alias bc='bc ~/.bc/extensions.bc'
-alias cp='cp -p'
-alias less=vimpager
-alias mdcat='pandoc -s -f markdown -t man | groff -T utf8 -man'
-
-#modules
-source /usr/local/Modules/3.2.10/init/bash
-export MODULEPATH=$HOME/Library/Modules:$MODULEPATH
 
 #Some gnuplot things
 export GNUTERM=x11
@@ -23,14 +15,7 @@ export PAGER=vimpager
 export EDITOR=vim
 export VISUAL=vim
 
-#LaTex
-export TEXMFDBS=$TEXMFDBS:$HOME/Library/texmf
-
-export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/opt/local/lib/pkgconfig:$PKG_CONFIG_PATH
-export LD_INCLUDE_PATH=/opt/local/include
 export MYSQL_PS1="\u@mysql:\d>"
-export MANPATH=$HOME/Library/Documentation:/usr/local/share/man:/usr/local/man:$MANPATH
-
 
 #completion and PS1
 if [ -e /opt/local/etc/bash_completion ]; then
@@ -45,20 +30,6 @@ else
   export PS1="\u@\h:\W>"
 fi
 
-#export CONDA_PS1_BACKUP=$PS1 #fix1
-
-
-#macports
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-export MANPATH="/opt/local/share/man:/opt/local/man:$MANPATH"
 ## silly tig
 source ~/.tig-completion.sh
 
-. $HOME/Applications/miniconda3/etc/profile.d/conda.sh
-#https://github.com/conda/conda/issues/6796
-if [[ "$TERM" =~ "screen".* ]]; then
-  conda deactivate
-fi
-conda activate base
-
-export PATH=$HOME/bin:$PATH
