@@ -50,3 +50,5 @@ fi
 unset __conda_setup
 # <<< conda init <<<
 
+# tmux
+[[ -z $TMUX ]] || conda deactivate && conda activate base
