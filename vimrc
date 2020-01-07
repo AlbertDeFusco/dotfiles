@@ -21,6 +21,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'brafales/vim-desert256'
 Plug 'vim-scripts/vim-auto-save'
+Plug 'powerman/vim-plugin-AnsiEsc'
 call plug#end()
 
 "auto save
@@ -44,3 +45,5 @@ let g:pymode_lint_cwindow = 0
 "let g:pymode_rope_completion = 1
 "let g:pymode_rope_completion_bind = '<C-Space>'
 
+"let vimpager_disable_ansiesc = 1
+let vimpager_passthrough = 0

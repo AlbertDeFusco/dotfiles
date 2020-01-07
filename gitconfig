@@ -1,9 +1,10 @@
 [color]
-  branch = true
-  diff = false
-  interactive = true
-  pager = true
-  status = true
+  ui = auto
+  #branch = true
+  #diff = false
+  #interactive = true
+  #pager = true
+  #status = true
 [core]
   editor = vim
   excludesfile = /Users/albert/.gitignore

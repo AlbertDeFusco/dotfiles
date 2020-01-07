@@ -4,6 +4,7 @@ alias ssh='ssh -Y'
 alias bc='bc ~/.bc/extensions.bc'
 alias cp='cp -p'
 alias less=vimpager
+alias zless=vimpager
 alias mdcat='pandoc -s -f markdown -t man | groff -T utf8 -man'
 alias sizes='du -sm * | sort -n -k 1'
 
