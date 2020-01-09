@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Disabled</key>
+    <false/>
+    <key>KeepAlive</key>
+    <false/>
+    <key>Label</key>
+    <string>local.jupyter</string>
+    <key>ProgramArguments</key>
+    <array>
+	    <string>/Users/adefusco/Applications/miniconda3/condabin/conda</string>
+        <string>run</string>
+        <string>-n</string>
+        <string>jupyter</string>
+        <string>jupyter</string>
+        <string>notebook</string>
+	<string>--NotebookApp.token='anaconda'</string>
+        <string>--no-browser</string>
+        <string>--port</string>
+        <string>8888</string>
+    </array>
+    <key>StandardErrorPath</key>
+    <string>/Users/adefusco/Library/Logs/jupyter-notebook.stderr</string>
+    <key>StandardOutPath</key>
+    <string>/Users/adefusco/Library/Logs/jupyter-notebook.stdout</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/adefusco/</string>
+</dict>
+</plist>
+

@@ -1,0 +1,12 @@
+{
+    "terminal.integrated.inheritEnv": false,
+    "window.restoreWindows": "none",
+    "editor.renderWhitespace": "boundary",
+    "files.autoSave": "afterDelay",
+    "workbench.editor.enablePreview": false,
+    "window.zoomLevel": 0,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.rulers": [
+        80
+    ]
+}
