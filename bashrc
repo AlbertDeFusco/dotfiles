@@ -11,12 +11,10 @@ alias sizes='du -sm * | sort -n -k 1'
 #macports
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export MANPATH="/opt/local/share/man:/opt/local/man:$MANPATH"
+export LD_INCLUDE_PATH="/opt/local/include"
+export PKG_CONFIG_PATH="/opt/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 export PATH=$HOME/bin:$PATH
-export MANPATH=$HOME/Library/Documentation:/usr/local/share/man:/usr/local/man:$MANPATH
-
-export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/opt/local/lib/pkgconfig:$PKG_CONFIG_PATH
-export LD_INCLUDE_PATH=/opt/local/include
 
 #LaTex
 export TEXMFDBS=$TEXMFDBS:$HOME/Library/texmf
