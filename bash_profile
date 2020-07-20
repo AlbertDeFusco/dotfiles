@@ -4,11 +4,7 @@ fi
 
 set -o vi
 
-#Some gnuplot things
-export GNUTERM=x11
-export GDFONTPATH=$GDFONTPATH:$HOME/Library/Fonts:/System/Library/Fonts:/Library/Fonts
-export GNUPLOT_FONTPATH=$GNUPLOT_FONTPATH:$HOME/Library/Fonts:/System/Library/Fonts:/Library/Fonts
-export GNUPLOT_DEFAULT_GDFONT=Monaco
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 #i like vim
 export PAGER=vimpager
