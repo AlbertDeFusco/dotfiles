@@ -1,12 +1,60 @@
 {
     "terminal.integrated.inheritEnv": false,
     "window.restoreWindows": "none",
-    "editor.renderWhitespace": "boundary",
     "files.autoSave": "afterDelay",
     "workbench.editor.enablePreview": false,
     "window.zoomLevel": 0,
+
+    "gitlens.views.repositories.files.layout": "tree",
+
     "editor.acceptSuggestionOnEnter": "off",
+    "editor.renderWhitespace": "boundary",
     "editor.rulers": [
-        80
-    ]
+        120
+    ],
+
+    "python.dataScience.searchForJupyter": false,
+    "python.showStartPage": false,
+    "python.dataScience.askForKernelRestart": false,
+    "python.dataScience.sendSelectionToInteractiveWindow": false,
+    "python.autoComplete.addBrackets": true,
+    "python.condaPath": "/Users/adefusco/Applications/miniconda3/bin/conda",
+    "python.dataScience.allowImportFromNotebook": false,
+    "python.dataScience.debugJustMyCode": false,
+    "python.dataScience.disableJupyterAutoStart": true,
+    "python.dataScience.showKernelSelectionOnInteractiveWindow": true,
+    "python.formatting.blackPath": "/Users/adefusco/Applications/miniconda3/bin/black",
+    "python.formatting.provider": "black",
+    "python.languageServer": "Pylance",
+    "python.jediEnabled": false,
+    "python.linting.flake8Path": "/Users/adefusco/Applications/miniconda3/bin/flake8",
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.experiments.enabled": false,
+    "pythonIndent.trimLinesWithOnlyWhitespace": true,
+    "python.testing.promptToConfigure": false,
+
+    "python.logging.level": "debug",
+
+    "workbench.startupEditor": "none",
+    "vsonline.authentication.accountProvider": "Microsoft",
+    "vsonline.accountProvider": "Microsoft",
+    "codespaces.accountProvider": "Microsoft",
+
+    "restructuredtext.preview.sphinx.disabled": true,
+    "restructuredtext.preview.markEditorSelection": false,
+    "restructuredtext.preview.doubleClickToSwitchToEditor": false,
+
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "terminal.integrated.shellArgs.osx": [
+        "-l",
+        "-i"
+    ],
+    "python.pythonPath": "/Users/adefusco/Applications/miniconda3/envs/data/bin/python",
+
 }
