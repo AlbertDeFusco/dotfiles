@@ -13,7 +13,7 @@ set wildmode=longest,list
 set wildmenu
 
 call plug#begin()
-Plug 'python-mode/python-mode', { 'branch': 'develop' }
+"Plug 'python-mode/python-mode', { 'branch': 'develop' }
 Plug 'stephpy/vim-yaml'
 Plug 'hashivim/vim-terraform'
 Plug 'vim-airline/vim-airline'
@@ -37,7 +37,7 @@ let g:pymode_python = 'python3'
 let g:pymode_options_max_line_length = 120
 let g:pymode_lint_options_pep8 = {'max_line_length': g:pymode_options_max_line_length}
 let g:pymode_options_colorcolumn = 1
-let g:pymode_trim_whitespaces = 1
+"let g:pymode_trim_whitespaces = 1
 let g:pymode_lint = 1
 let g:pymode_lint_cwindow = 0
 "let g:pymode_rope = 1
@@ -47,4 +47,4 @@ let g:pymode_lint_cwindow = 0
 "let g:pymode_rope_completion_bind = '<C-Space>'
 
 "let vimpager_disable_ansiesc = 1
-let vimpager_passthrough = 0
+"let vimpager_passthrough = 0
