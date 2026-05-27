@@ -11,6 +11,9 @@
   quotepath = false
   whitespace = space-before-tab,tab-in-indent,trailing-space
 
+[pull]
+  rebase = false
+
 [merge]
   tool = mvim
   #tool = vimdiff
@@ -18,7 +21,7 @@
   cmd = mvim -d -g $LOCAL $MERGED $REMOTE
   keepbackup=false
 
-
 [user]
   name = Albert DeFusco
   email = albert.defusco@me.com
+

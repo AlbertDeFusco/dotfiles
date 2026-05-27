@@ -23,6 +23,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'brafales/vim-desert256'
 Plug 'vim-scripts/vim-auto-save'
+Plug 'powerman/vim-plugin-AnsiEsc'
+Plug 'brianclements/vim-lilypond'
 call plug#end()
 
 "auto save

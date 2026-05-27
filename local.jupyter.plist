@@ -5,7 +5,7 @@
     <key>Disabled</key>
     <false/>
     <key>KeepAlive</key>
-    <false/>
+    <true/>
     <key>Label</key>
     <string>local.jupyter</string>
     <key>ProgramArguments</key>
