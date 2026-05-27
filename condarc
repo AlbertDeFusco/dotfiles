@@ -1,0 +1,22 @@
+no_plugins: false
+#solver: rattler
+extra_safety_checks: false
+ssl_verify: true
+channel_alias: https://conda.anaconda.org
+restore_free_channel: false
+#auto_stack: 1
+add_anaconda_token: true
+channels:
+  # https://repo.anaconda.cloud/repo/main
+  # https://repo.anaconda.cloud/repo/anaconda-wheels
+  - local
+  - anaconda-cloud/label/dev
+  - anaconda-cloud
+  - datalayer
+  - defaults
+
+#channel_settings:
+#  - channel: https://repo.anaconda.cloud/*
+#    auth: anaconda-auth
+
+auto_activate: false
