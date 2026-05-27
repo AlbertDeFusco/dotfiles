@@ -14,6 +14,8 @@ set wildmenu
 
 call plug#begin()
 "Plug 'python-mode/python-mode', { 'branch': 'develop' }
+Plug 'puremourning/vimspector'
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'stephpy/vim-yaml'
 Plug 'hashivim/vim-terraform'
 Plug 'vim-airline/vim-airline'
@@ -46,3 +48,10 @@ let g:pymode_lint_cwindow = 0
 
 "let vimpager_disable_ansiesc = 1
 "let vimpager_passthrough = 0
+
+"viminspector
+let g:vimspector_enable_mappings = 'HUMAN'
+let g:vimspector_install_gadgets = [ 'debugpy' ]
+
+"coc
+nmap <leader>cl  <Plug>(coc-codelens-action)

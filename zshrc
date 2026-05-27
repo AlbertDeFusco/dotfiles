@@ -7,7 +7,15 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/Users/adefusco/Applications/lilypond-2.25.13/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+#export PATH=$HOME/Development/llama.cpp/build/bin:$PATH
 export PATH=$HOME/bin:$PATH
+export CONDA_ROOT=/Users/adefusco/Applications/miniconda3
+export AWS_BEARER_TOKEN_BEDROCK=`cat ~/Secrets/AWS/bedrock-bearer`
+export GH_PACKAGE_TOKEN=`cat ~/Secrets/github/package-token`
+export ANACONDA_NPM_TOKEN="$GH_PACKAGE_TOKEN"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/adefusco/.oh-my-zsh"
@@ -17,7 +25,11 @@ export ZSH="/Users/adefusco/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="agnoster"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+if [[ "$TERM_PROGRAM" == "vscode" ]] || [[ "$TERM_PROGRAM" == "tmux" ]]; then
+  ZSH_THEME="robbyrussell"
+else
+  ZSH_THEME="powerlevel10k/powerlevel10k"
+fi
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -122,6 +134,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vi=vim
+alias acurl="anaconda curl"
+alias crun="conda run --no-capture-output -n base"
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -129,16 +144,25 @@ source $ZSH/oh-my-zsh.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/adefusco/Applications/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/adefusco/Applications/miniconda-wheel/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/adefusco/Applications/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/adefusco/Applications/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/adefusco/Applications/miniconda-wheel/etc/profile.d/conda.sh" ]; then
+        . "/Users/adefusco/Applications/miniconda-wheel/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/adefusco/Applications/miniconda3/bin:$PATH"
+        export PATH="/Users/adefusco/Applications/miniconda-wheel/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+export PATH=/opt/homebrew/bin:$PATH
+
+export PATH="/Users/adefusco/.pixi/bin:$PATH"
+
+# opencode
+export PATH=/Users/adefusco/.opencode/bin:$PATH
+export SESAME_BROWSER=brave
+
+export PATH="/Users/adefusco/.ana/bin:$PATH"
