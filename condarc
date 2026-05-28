@@ -9,10 +9,10 @@ add_anaconda_token: true
 channels:
   # https://repo.anaconda.cloud/repo/main
   # https://repo.anaconda.cloud/repo/anaconda-wheels
-  - local
-  - anaconda-cloud/label/dev
-  - anaconda-cloud
-  - datalayer
+  # local
+  # anaconda-cloud/label/dev
+  # anaconda-cloud
+  # datalayer
   - defaults
 
 #channel_settings:
